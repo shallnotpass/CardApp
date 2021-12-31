@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>{{message}}</p>
+  <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+<script>
+    import {EagleModal} from 'vue-eagle-modal' 
+    Vue.use(EagleModal);
+    var app = new Vue({
+  el: '#app',
+  data: {
+    message:'Hello Vue!'
+  }
+})
+</script>
